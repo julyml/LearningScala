@@ -1,7 +1,7 @@
 import scala.annotation.tailrec
 
 def isGoodEnough(guess: Double, x: Double) =
-  math.abs(guess * guess - x ) < 0.001
+  math.abs(guess * guess - x ) /x < 0.001
 
 def improve(guess: Double, x: Double) =
   (guess + x /guess)/2
