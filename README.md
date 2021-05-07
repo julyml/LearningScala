@@ -13,7 +13,7 @@
 
 "Higher order functions take other functions as parameters or return a function as a result." [Higher-order Functions](https://docs.scala-lang.org/tour/higher-order-functions.html)
 
-### Nested functions 
+### [Nested functions](https://docs.scala-lang.org/tour/nested-functions.html)
  ```scala
 def factorial(x: Int): Int = {
     def fact(x: Int, accumulator: Int): Int = {
