@@ -27,10 +27,10 @@ object scala {
     val moviesDS = spark.read
       .option("sep","\t")
       .schema(moviesSchema)
-      .csv("C:\\Users\\<user>\\Documents\\ml-100k")
+      .csv("C:\\Users\\julym\\Documents\\ml-100k\\u.data")
       .as[Movie]
 
-    val topMoviesIDs = moviesDS.groupBy("movieID").count().orderBy("count")
+    val topMoviesIDs = moviesDS.groupBy("movieID").count().orderBy(desc("count"))
 
     topMoviesIDs.show(10)
 
