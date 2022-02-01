@@ -36,3 +36,5 @@ def factorial(x: Int): Int = {
 // Or
 (_:Int)*(_Int)
 ```
+### Infix Notation
+Scala has a special punctuation-free syntax for invoking methods of arity-1 (one argument). This should generally be avoided, but with the following exceptions for operators and higher-order functions. In these cases it should only be used for purely-functional methods (methods with no side-effects). [Method Invocations](https://docs.scala-lang.org/style/method-invocation.html)
