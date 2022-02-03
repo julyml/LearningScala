@@ -38,3 +38,14 @@ def factorial(x: Int): Int = {
 ```
 ### Infix Notation
 Scala has a special punctuation-free syntax for invoking methods of arity-1 (one argument). This should generally be avoided, but with the following exceptions for operators and higher-order functions. In these cases it should only be used for purely-functional methods (methods with no side-effects). [Method Invocations](https://docs.scala-lang.org/style/method-invocation.html)
+
+### [Companion Objects](https://docs.scala-lang.org/overviews/scala-book/companion-objects.html)
+A companion object in Scala is an object that’s declared in the same file as a class, and has the same name as the class. For instance, when the following code is saved in a file named Pizza.scala, the Pizza object is considered to be a companion object to the Pizza class:
+
+ ```scala
+class Pizza {
+}
+
+object Pizza {
+}
+```
