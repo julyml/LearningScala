@@ -49,3 +49,6 @@ class Pizza {
 object Pizza {
 }
 ```
+### (Predef Object)[https://www.scala-lang.org/api/2.13.6/scala/Predef$.html#require(requirement:Boolean):Unit]
+The require method is used to check preconditions such as whether a value is equal to another value.
+
